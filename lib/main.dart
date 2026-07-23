@@ -63,18 +63,18 @@ class WelcomeScreen extends StatelessWidget {
                     SizedBox(height: 10),
                     Text(
                       'Answer the few questions so we can build the perfect language learning plan for you.',
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.normal,
                         color: Colors.white,
-                        fontFamily: 'calibri',
                       ),
                     ),
                   ],
                 ),
               ),
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 150),
             Padding(
               padding: const EdgeInsets.all(20),
               
@@ -82,9 +82,24 @@ class WelcomeScreen extends StatelessWidget {
                 onPressed: () {
                   // Handle button press
                 },
+                style: ElevatedButton.styleFrom(
+                  
+                  backgroundColor: const Color(0xff6E6A94),
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                ),
                 
 
-                child: Text('Get Started'),
+                child: Text('Sign In',
+                 style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),),
+                
               )
             )
           ],
