@@ -74,11 +74,13 @@ class WelcomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 150),
+            Spacer(),
             Padding(
               padding: const EdgeInsets.all(20),
-              
-              child: ElevatedButton(
+              child: SizedBox(
+                width: double.infinity,
+                height: 60,     
+                 child: ElevatedButton(
                 onPressed: () {
                   // Handle button press
                 },
@@ -99,10 +101,22 @@ class WelcomeScreen extends StatelessWidget {
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),),
+                 )
                 
               )
-            )
+            
+            ),
+            SizedBox(height: 10),
+            const Text(
+              'Takes less than 2 minutes',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 12,
+                color: Colors.white,
+              ),
+            ),
           ],
+          
             ),
           ),
         ],
